@@ -1,0 +1,288 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    position: relative;
+    left: 100px;
+    top: 50px;
+    width: 245px;
+    height: 395px;
+}
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 0px 0px green;
+}
+
+.container:hover>.card {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.front_card {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 238, 147);
+    backface-visibility: hidden;
+    color: aliceblue;
+    border-radius: 20px;
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 15px 0 0 15px;
+    box-sizing: border-box;
+    border: 0.5px solid rgb(158, 158, 158);
+    box-shadow: -3px 3px 11px rgb(158, 158, 158);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.front_card .sim {
+    position: absolute;
+    right: 65px;
+    top: 40px;
+    width: 90px;
+    height: 50px;
+}
+
+.front_card .network {
+    position: absolute;
+    right: 37px;
+    top: 51px;
+    width: 40px;
+    height: 28px;
+    transform: rotatez(90deg);
+}
+
+.front_card .name {
+    position: absolute;
+    top: 192px;
+    left: 58px;
+}
+
+.front_card .two_circles {
+    position: absolute;
+    bottom: 16px;
+    left: 12px;
+    width: 117px;
+    height: 57px;
+    /* background-color: black; */
+}
+
+.front_card .circle1 {
+    position: absolute;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 0, 0);
+}
+
+.front_card .circle2 {
+    position: absolute;
+    left: 32px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255 129 0);
+    opacity: 0.85;
+}
+
+.front_card .logo-container {
+    position: absolute;
+    bottom: 20px;
+    width: 162px;
+    height: 120px;
+}
+
+.front_card .sadalogo {
+    position: absolute;
+    bottom: 2px;
+    right: -100px;
+    width: 162px;
+    height: 100px;
+}
+
+.front_card img {
+    position: absolute;
+    right: -2px;
+    top: 15px;
+    width: 80%;
+    height: 103%;
+}
+
+.front_card .img {
+    left: 10px;
+    transform: rotateZ(180deg);
+    top: 30px;
+}
+
+.back_card {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ff5640;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    font-family: serif;
+    border: 0.5px solid rgb(158, 158, 158);
+    box-shadow: -3px 3px 11px rgb(158, 158, 158);
+}
+
+.back_card .digits {
+    transform: rotatez(270deg);
+    position: absolute;
+    left: -34px;
+    bottom: 65px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 11px;
+}
+
+.back_card .black-bar {
+    width: 38px;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    left: 24px;
+}
+
+.back_card .logo-container {
+    position: absolute;
+    top: -33px;
+    left: -81px;
+    width: 162px;
+    height: 120px;
+}
+
+.back_card .sadalogo {
+    position: absolute;
+    bottom: 0px;
+    right: -103px;
+    width: 162px;
+    height: 100px;
+}
+
+.back_card img {
+    position: absolute;
+    right: 73px;
+    top: 25px;
+    width: 24%;
+    height: 30%;
+}
+
+.back_card .img {
+    left: 42px;
+    transform: rotateZ(180deg);
+    top: 30px;
+}
+
+.back_card .sadapay {
+    position: absolute;
+    font-size: 21px;
+    color: white;
+    right: 31px;
+    top: 19px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.back_card .code {
+    position: absolute;
+    bottom: 256px;
+    left: 79px;
+    color: white;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.back_card .para {
+    position: absolute;
+    top: 152px;
+    left: 74px;
+    bottom: 190px;
+    width: 161px;
+    height: 70px;
+}
+
+.back_card .para p {
+    position: absolute;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+
+}
+
+.back_card .web {
+    position: absolute;
+    bottom: 18px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.7px;
+    color: white;
+
+}
+
+.back_card .circle-logo {
+    position: absolute;
+    bottom: 44px;
+    left: 72px;
+    width: 44px;
+    height: 28px
+}
+
+.circle-logo .oval {
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.oval p {
+    font-size: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+}
+
+.circle-logo .logo-part {
+    bottom: 0px;
+    font-size: 10px;
+    font-weight: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    letter-spacing: 4.5px;
+    text-align: center;
+    border-bottom: 3px solid white;
+    margin-left: 3px;
+}
+
+.back_card .shine-bar {
+    position: absolute;
+    bottom: 13px;
+    right: 9px;
+    width: 102px;
+    height: 68px;
+    overflow: hidden;
+}
+
+.shine-bar img {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
